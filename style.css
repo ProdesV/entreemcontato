@@ -1,48 +1,107 @@
+/* Reset básico */
 body {
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
   color: #333;
 }
 
+/* Logo e topo */
 header {
-  background-color: #f5f5f5;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+}
+.logo {
+  max-width: 120px;
+  margin-bottom: 10px;
+}
+header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+header p {
+  font-style: italic;
+  margin-top: 5px;
+}
+
+/* Carrossel */
+.swiper-container {
+  width: 100%;
+  height: 300px;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Especialidades */
+.especialidades {
   padding: 40px 20px;
+  background-color: #f0f0f0;
+}
+.especialidades h2 {
+  text-align: center;
+  color: #8e44ad;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.grid div {
+  flex: 1 1 250px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+  transition: transform 0.3s ease;
+}
+.grid div:hover {
+  transform: scale(1.03);
+}
+
+/* Equipe */
+.equipe {
+  padding: 40px 20px;
+}
+.equipe h2 {
+  text-align: center;
+  color: #8e44ad;
+}
+.profissional {
   text-align: center;
 }
-
-header h1 {
-  font-size: 2.5em;
+.profissional img {
+  width: 120px;
+  border-radius: 50%;
   margin-bottom: 10px;
-  color: #000;
 }
 
-main {
-  padding: 20px;
-  max-width: 800px;
+/* Localização */
+.localizacao {
+  padding: 40px 20px;
+}
+.localizacao h2 {
+  text-align: center;
+  color: #8e44ad;
+}
+
+/* Contato */
+.contato {
+  padding: 40px 20px;
+  background-color: #f0f0f0;
+}
+.contato h2 {
+  text-align: center;
+  color: #8e44ad;
+}
+form {
+  max-width: 500px;
   margin: auto;
 }
-
-h2 {
-  color: #000;
-  margin-top: 40px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  margin-bottom: 15px;
-  line-height: 1.6;
-}
-
-form {
-  margin-top: 20px;
-}
-
 input, textarea {
   width: 100%;
   padding: 10px;
@@ -50,19 +109,58 @@ input, textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
 button {
-  background-color: #000;
+  background-color: #2c3e50;
   color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background-color: #34495e;
 }
 
+/* Ícones sociais */
 footer {
-  background-color: #f5f5f5;
   text-align: center;
   padding: 20px;
-  margin-top: 40px;
+  background-color: #fff;
+}
+.whatsapp-icon, .instagram-icon {
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.whatsapp-icon {
+  color: #25D366;
+}
+.instagram-icon {
+  color: #000;
+}
+
+/* Animações */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-out forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.zoom-in {
+  transform: scale(0.9);
+  animation: zoomIn 0.8s ease-out forwards;
+}
+@keyframes zoomIn {
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
