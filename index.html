@@ -1,98 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Neoimagem Clínica</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresa de Produtos da Mandioca</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Topo com logo -->
   <header>
-    <img src="./fotos/neoim.avif" alt="Neoimagem" class="logo" />
-    <h1>NEOIMAGEM</h1>
-    <p><em>Cuidando da saúde feminina e do bem-estar materno infantil com dedicação</em></p>
+    <img src="./img/logo.jpg" alt="Logo da Empresa" class="logo">
+    <h1>Produtos da Mandioca</h1>
+    <p>Alimentos naturais e sustentáveis, direto da mandioca para você.</p>
   </header>
 
-  <!-- Carrossel principal -->
-  <div class="swiper-container top-carousel fade-in">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="assets/top1.jpg" alt="Imagem 1" /></div>
-      <div class="swiper-slide"><img src="assets/top2.jpg" alt="Imagem 2" /></div>
-      <div class="swiper-slide"><img src="assets/top3.jpg" alt="Imagem 3" /></div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
-
-  <!-- Especialidades -->
-  <section class="especialidades fade-in">
-    <h2>ESPECIALIDADES</h2>
-    <div class="grid">
-      <div><h3>GINECOLOGIA</h3><p>Saúde da mulher como um todo, incluindo aparelho reprodutor e mamas.</p></div>
-      <div><h3>OBSTETRÍCIA</h3><p>Pré-natal e parto com segurança e conforto para futuras mães.</p></div>
-      <div><h3>MEDICINA FETAL</h3><p>Acompanhamento do bebê desde as primeiras semanas até o nascimento.</p></div>
-      <div><h3>NUTRIÇÃO MATERNO-INFANTIL</h3><p>Orientação alimentar para mães e crianças em todas as fases.</p></div>
-      <div><h3>LASERTERAPIA</h3><p>Tratamento de dores e cicatrização pós-parto e amamentação.</p></div>
-      <div><h3>ULTRASSONOGRAFIA</h3><p>Visualização de órgãos e acompanhamento do bebê.</p></div>
-      <div><h3>BIÓPSIA</h3><p>Exame para diagnóstico de doenças por análise laboratorial.</p></div>
-      <div><h3>DIU, MIRENA, IMPLANON</h3><p>Métodos contraceptivos de longa duração e reversíveis.</p></div>
-      <div><h3>CAF (LEEP)</h3><p>Procedimento cirúrgico para remoção de células anormais.</p></div>
-    </div>
-  </section>
-
-  <!-- Segundo carrossel (depoimentos ou serviços) -->
-  <div class="swiper-container bottom-carousel fade-in">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><p>"Atendimento excelente e humanizado!" – Maria</p></div>
-      <div class="swiper-slide"><p>"Profissionais muito capacitados." – João</p></div>
-      <div class="swiper-slide"><p>"Ambiente acolhedor e moderno." – Carla</p></div>
-    </div>
-  </div>
-
-  <!-- Equipe de profissionais -->
-  <section class="equipe fade-in">
-    <h2>NOSSA EQUIPE</h2>
-    <div class="grid">
-      <div class="profissional zoom-in">
-        <img src="assets/dr-ana.jpg" alt="Dra. Ana Souza" />
-        <h3>Dra. Ana Souza</h3>
-        <p>Ginecologista e Obstetra</p>
+  <!-- Carrossel -->
+  <section class="carousel">
+    <div class="carousel-container">
+      <div class="slide active">
+        <img src="./img/IMG-20250905-WA0007.jpg" alt="Produto 1">
       </div>
-      <div class="profissional zoom-in">
-        <img src="assets/dr-carlos.jpg" alt="Dr. Carlos Lima" />
-        <h3>Dr. Carlos Lima</h3>
-        <p>Especialista em Medicina Fetal</p>
+      <div class="slide">
+        <img src="./img/IMG-20250905-WA0015.jpg" alt="Produto 2">
+      </div>
+      <div class="slide">
+        <img src="./img/IMG-20250905-WA0022.jpg" alt="Produto 3">
+      </div>
+      <div class="slide">
+        <img src="./img/IMG-20250905-WA0031.jpg" alt="Produto 4">
       </div>
     </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+    <div class="dots"></div>
   </section>
 
-  <!-- Localização -->
-  <section class="localizacao fade-in">
-    <h2>LOCALIZAÇÃO</h2>
-    <iframe src="https://www.google.com/maps?q=Alameda+Brumado,+97,+Vitória+da+Conquista,+BA&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  </section>
+  <!-- Botão de contato -->
+  <div class="contato">
+    <a href="https://wa.me/5599999999999" class="btn-contato">Entrar em Contato</a>
+  </div>
 
-  <!-- Formulário de contato -->
-  <section class="contato fade-in">
-    <h2>DEIXE SUA MENSAGEM</h2>
-    <form id="contact-form">
-      <input type="text" name="user_name" placeholder="Seu nome" required />
-      <input type="email" name="user_email" placeholder="Seu email" required />
-      <textarea name="message" placeholder="Sua mensagem" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <!-- Ícones sociais -->
   <footer>
-    <a href="https://wa.me/SEUNUMERO" target="_blank" class="whatsapp-icon">📱</a>
-    <a href="https://instagram.com/SEUUSUARIO" target="_blank" class="instagram-icon">📷</a>
-    <p>©2025 por Neoimagem Clínica</p>
+    © 2025 Empresa de Produtos da Mandioca
   </footer>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
