@@ -31,7 +31,7 @@ p {
 /* Carrossel */
 .carousel {
   position: relative;
-  max-width: 900px;
+  max-width: 400px;
   margin: 0 auto 30px;
   overflow: hidden;
   border-radius: 12px;
